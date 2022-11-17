@@ -75,6 +75,17 @@ body {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 1);  
 }
+.text-modal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 12px;
+}
+.modal-form {
+    padding: 40px;
+}
 .page-header {
     border-bottom: 1px solid #ECECEC;
 }
