@@ -122,24 +122,26 @@ body {
 }
 .form-input {
     height: 36px;
-    padding: 0px;  
+    padding-left: 42px;  
 }
 .form-label {
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
 }
-.form-field {
+.fill-field {
     position: relative;
-    padding: 0px;
     margin-bottom: 10px;
-    height: 58px;
 }
 .icon-field {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 3%;
+    transform: translateY(-40%);
     fill: #212121;
+}
+.form-input:focus + .icon-field {
+    fill: var(--accent-color);
 }
 .checkbox-label {
     position: relative;
@@ -180,7 +182,8 @@ body {
     color: var(--accent-color);
 }
 .button-form {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     min-width: 200px;
     padding: 10px 52px;
     margin-bottom: 40px;
