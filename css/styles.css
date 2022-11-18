@@ -81,19 +81,55 @@ body {
     line-height: 1.6;
     text-align: center;
     color: rgba(33, 33, 33, 1);
+    margin-top: 40px;
     margin-bottom: 12px;
 }
 .feedback-form {
     display: inline-block;
-    padding: 40px;
+    padding: 0px 40px;
+    height: 581px;
 }
 .form-input,
 .form-textarea {
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    margin-top: 4px;
 }
-.checkbox-form {
+.textarea-field {
+    margin-bottom: 20px;
+}
+.form-textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+}
+::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+.form-input {
+    height: 40px;
+    padding: 0px;  
+}
+.form-label {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+.form-field {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.icon-field {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+.checkbox-label {
     position: relative;
     display: flex;
     justify-content: center;
@@ -101,21 +137,40 @@ body {
     font-size: 14px;
     line-height: 1.7;
     width: 425px;
-    margin-top: 20px;
+    height: 24px;
     margin-bottom: 30px;
     margin-left: 12px;
     margin-right: 11px;
+    cursor: pointer;
 }
-.checkbox-icon {
+.checkbox-icon-cheked {
+    opacity: 0;   
+}
+.checkbox-input:checked:focus~.checkbox-icon-cheked {
+    opacity: 1;
+    fill: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    padding: 1px;
+}
+.checkbox-input:checked:focus~.checkbox-icon-uncheked {
+    opacity: 0;
+}
+.checkbox-icon-uncheked,
+.checkbox-icon-cheked {
     position: absolute;
-    left: 0%;
-    top: 15%;  
+    left: 0;
 }
-.checkbox-label {
-    margin-left: 9px;
+.checkbox-text {
+    margin-left: 8px;
 }
 .checkbox-href {
     color: var(--accent-color);
+}
+.button-form {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
 }
 .page-header {
     border-bottom: 1px solid #ECECEC;

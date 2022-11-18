@@ -317,25 +317,34 @@
   <form class="feedback-form">
     <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
 
-    <div class="form-field"><label for="name" class="form-label">Ім'я</label>
+    <div class="form-field">
+    <svg class="icon-field" width="18px" height="18px"><use href="./images/icons.svg#icon-person-black"></use></svg> 
+    <label for="name" class="form-label">Ім'я</label>
     <input type="text" name="name" id="name" class="form-input"></div>
 
-    <div class="form-field"><label for="tel" class="form-label">Телефон</label>
+    <div class="form-field">
+    <svg class="icon-field" width="18px" height="18px"><use href="./images/icons.svg#icon-phone-black"></use></svg>
+    <label for="tel" class="form-label">Телефон</label>
     <input type="tel" name="telephon" id="tel" class="form-input"></div>
 
-    <div class="form-field"><label for="email" class="form-label">Пошта</label>
+    <div class="form-field">
+    <svg class="icon-field" width="18px" height="18px"><use href="./images/icons.svg#icon-email-black"></use></svg>
+    <label for="email" class="form-label">Пошта</label>
     <input type="email" name="email" id="email" class="form-input"></div>
 
-    <label for="coment">Коментар</label>
-    <textarea class="form-textarea" name="comentar" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+    <div class="textarea-field"><label class="form-label" for="coment">Коментар</label>
+    <textarea class="form-textarea" name="comentar" id="coment" placeholder="Введіть текст"></textarea></div>
 
-    <div class="checkbox-form">
-     <span >
-      <svg class="checkbox-icon" width="16px" height="15px">
+    <label class="checkbox-label" for="confirmation">
+      <input class="checkbox-input visually-hidden" type="checkbox" name="confirmation" id="confirmation">
+      <svg class="checkbox-icon-uncheked" width="16px" height="15px">
       <use href="./images/icons.svg#icon-square"></use></svg>
-     </span> 
-    <input  class="checkbox-input visually-hidden" type="checkbox" name="confirmation" id="confirmation">
-    <label class="checkbox-label" for="confirmation">Погоджуюся з розсилкою та приймаю <a class="checkbox-href" href="">Умови договору</href></label></div>
+     
+      <svg class="checkbox-icon-cheked" width="16px" height="15px">
+      <use href="./images/icons.svg#icon-white"></use>
+      </svg>
+      <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-href" href="">Умови договору</href></span>
+    </label>
 
     <button type="submit" class="button-form">Відправити</button>
   </form>
