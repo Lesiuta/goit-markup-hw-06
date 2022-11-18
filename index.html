@@ -314,8 +314,8 @@
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </div>
-  <form class="modal-form">
-    <p class="text-modal">Залиште свої дані, ми вам передзвонимо</p>
+  <form class="feedback-form">
+    <p class="text-form">Залиште свої дані, ми вам передзвонимо</p>
 
     <div class="form-field"><label for="name" class="form-label">Ім'я</label>
     <input type="text" name="name" id="name" class="form-input"></div>
@@ -327,10 +327,15 @@
     <input type="email" name="email" id="email" class="form-input"></div>
 
     <label for="coment">Коментар</label>
-    <textarea name="comentar" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+    <textarea class="form-textarea" name="comentar" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
 
-    <input type="checkbox" name="confirmation" id="confirmation">
-    <label for="confirmation">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</href></label>
+    <div class="checkbox-form">
+     <span >
+      <svg class="checkbox-icon" width="16px" height="15px">
+      <use href="./images/icons.svg#icon-square"></use></svg>
+     </span> 
+    <input  class="checkbox-input visually-hidden" type="checkbox" name="confirmation" id="confirmation">
+    <label class="checkbox-label" for="confirmation">Погоджуюся з розсилкою та приймаю <a class="checkbox-href" href="">Умови договору</href></label></div>
 
     <button type="submit" class="button-form">Відправити</button>
   </form>
