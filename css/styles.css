@@ -108,6 +108,7 @@ body {
 }
 .textarea-field {
     margin-bottom: 20px;
+    height: 138px;
 }
 .form-textarea {
     height: 120px;
