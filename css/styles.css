@@ -137,7 +137,7 @@ body {
     position: absolute;
     top: 50%;
     left: 3%;
-    transform: translateY(-40%);
+    transform: translateY(-50%);
     fill: #212121;
 }
 .form-input:focus + .icon-field {
