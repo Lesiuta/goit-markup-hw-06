@@ -305,12 +305,16 @@
     </li>
         </ul>
         </div>
-        <div>
-          <p class="">Підпишіться на розсилку</p>
-          <label for=""></label>
-          <input type="email" placeholder="E-mail">
-          <button type="submit">Підписатися</button>
-        </div>
+          <form class="footer-form">
+          <p class="footer-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <div class="input-footer"><label for="mail"></label>
+          <input class="email-footer" type="email" name="email" placeholder="E-mail">
+        <div class="field-footer">
+          <button class="button-footer" type="submit">Підписатися</button>
+          <svg class="icon-footer" width="24" height="24">
+            <use href="./images/icons.svg#icon-plane"></use></svg>
+        </div></div>
+          </form>   
   </div>
 </footer>
 <div class="modal-backdrop is-hidden" data-modal>
@@ -333,8 +337,8 @@
     </div>
 
     <div class="form-field">
-      <label for="name" class="form-label">Телефон</label>
-      <div class="fill-field"><input type="text" name="name" id="name" class="form-input">
+      <label for="tel" class="form-label">Телефон</label>
+      <div class="fill-field"><input type="text" name="telephon" id="tel" class="form-input">
         <svg class="icon-field" width="18px" height="18px">
           <use href="./images/icons.svg#icon-phone-black"></use>
         </svg>
@@ -342,8 +346,8 @@
     </div>
 
         <div class="form-field">
-          <label for="name" class="form-label">Пошта</label>
-          <div class="fill-field"><input type="text" name="name" id="name" class="form-input">
+          <label for="mail" class="form-label">Пошта</label>
+          <div class="fill-field"><input type="email" name="email" id="mail" class="form-input">
             <svg class="icon-field" width="18px" height="18px">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
@@ -361,9 +365,8 @@
       <svg class="checkbox-icon-cheked" width="16px" height="15px">
       <use href="./images/icons.svg#icon-white"></use>
       </svg>
-      <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-href" href="">Умови договору</href></span>
+      <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-href" href="">Умови договору</a></span>
     </label>
-
     <button type="submit" class="button-form">Відправити</button>
   </form>
   </div>
