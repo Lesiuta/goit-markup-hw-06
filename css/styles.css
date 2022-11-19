@@ -656,6 +656,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     font-size: 16px;
     line-height: 1.9;
 }
+.footer .container {
+    display: flex;
+    gap: 70px;
+}
 .footer-title {
 font-weight: 700;
 font-size: 14px;
@@ -679,7 +683,4 @@ margin-top: 12px;
 .footer-item .social-links:hover {
     background-color: var(--accent-color);
 }
-.footer .container {
-    display: flex;
-    gap: 70px;
-}
+
